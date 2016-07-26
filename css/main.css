@@ -2,7 +2,26 @@
    Author's custom styles
    ========================================================================== */
 
-#map-container { height: 180px; }
+#map-container { 
+  height: 400px; 
+}
+
+#affix-nav{
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+#links ul{
+  padding: 0;
+}
+#links li{
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+hr{
+  margin-bottom: 0;
+}
 
 
 
