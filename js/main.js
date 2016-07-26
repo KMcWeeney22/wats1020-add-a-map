@@ -47,4 +47,19 @@ var marker2 = L.marker([46.756960, -121.556381]).addTo(mymap);
 var circle = L.circle([46.7866252,-121.7343637], 1000).addTo(mymap);
   circle.bindPopup("<p>Paradise Inn & Climbing Information Center")
   
+// click function added for smooth scrolling when you click on a link in the navbar
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+  
+
 });
